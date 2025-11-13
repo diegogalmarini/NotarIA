@@ -1,0 +1,9 @@
+# Tutor Ingesis - Deployment Configuration
+# Última actualización: $(date)
+# Versión del backend: SIMPLIFICADA para Vercel
+# Cambios: Eliminado SQLAlchemy, base de datos simplificada, dependencias mínimas
+
+PROJECT_NAME=Tutor-Ingesis-Simplificado
+BACKEND_VERSION=1.0.0-simplified
+DEPLOYMENT_TYPE=vercel-serverless
+FEATURES=auth-mock,tutor-mock,admin-mock

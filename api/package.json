@@ -1,0 +1,13 @@
+{
+  "name": "tutor-ingesis-api",
+  "version": "1.0.0",
+  "description": "Tutor Ingesis API - Backend para Escribanía Galmarini",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": ["tutor", "ingesis", "api", "vercel"],
+  "author": "Escribanía Galmarini",
+  "license": "MIT",
+  "dependencies": {}
+}

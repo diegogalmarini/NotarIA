@@ -1,0 +1,25 @@
+{
+  "name": "tutor-ingesis-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Tutor Ingesis - Escribanía Galmarini",
+  "main": "api/index.py",
+  "scripts": {
+    "dev": "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "start": "uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  },
+  "dependencies": {
+    "fastapi": "^0.104.1",
+    "uvicorn": "^0.24.0",
+    "pydantic": "^2.5.0",
+    "pydantic-settings": "^2.1.0",
+    "python-jose": "^3.3.0",
+    "passlib": "^1.7.4",
+    "python-multipart": "^0.0.6",
+    "sqlalchemy": "^2.0.23",
+    "asyncpg": "^0.29.0",
+    "httpx": "^0.25.2"
+  },
+  "engines": {
+    "python": "3.11.x"
+  }
+}
