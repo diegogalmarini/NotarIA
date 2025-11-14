@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function DashboardPage() {
   return (
     <div className="px-4 py-6 sm:px-0">
@@ -17,12 +19,12 @@ export default function DashboardPage() {
             <p className="text-gray-600 mb-4">
               Consulta con nuestro asistente de IA especializado en derecho notarial.
             </p>
-            <a
+            <Link
               href="/dashboard/tutor"
               className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-200"
             >
               Ir al Tutor
-            </a>
+            </Link>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -32,12 +34,12 @@ export default function DashboardPage() {
             <p className="text-gray-600 mb-4">
               Gestiona y supervisa las operaciones del sistema.
             </p>
-            <a
+            <Link
               href="/dashboard/panel"
               className="inline-block bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-200"
             >
               Ver Panel
-            </a>
+            </Link>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">

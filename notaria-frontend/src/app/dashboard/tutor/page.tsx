@@ -32,12 +32,12 @@ export default function TutorPage() {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`,
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ question: input }),
       });
 
       if (response.ok) {
         const data = await response.json();
-        const botMessage: Message = { sender: 'bot', text: data.answer };
+        const botMessage: Message = { sender: 'bot', text: data.response };
         setMessages((prev) => [...prev, botMessage]);
       } else {
         const errorMessage: Message = { 

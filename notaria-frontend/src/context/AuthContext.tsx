@@ -27,14 +27,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Check for existing token on mount
-    const storedToken = localStorage.getItem('token');
-    if (storedToken) {
-      setToken(storedToken);
-      // You might want to validate the token here
-      fetchCurrentUser(storedToken);
-    }
-    setIsLoading(false);
+    const init = async () => {
+      const storedToken = localStorage.getItem('token');
+      if (storedToken) {
+        setToken(storedToken);
+        await fetchCurrentUser(storedToken);
+      }
+      setIsLoading(false);
+    };
+    init();
   }, []);
 
   const fetchCurrentUser = async (authToken: string) => {
